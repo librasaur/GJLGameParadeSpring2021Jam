@@ -71,7 +71,7 @@ Material:
     - _ZWrite: 1
     - _offsetX: 10.05
     - _offsetY: 27.2
-    - _switch: 1
+    - _switch: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
