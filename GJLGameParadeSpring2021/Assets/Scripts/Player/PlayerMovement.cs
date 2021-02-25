@@ -1,16 +1,15 @@
-﻿using System.Data.SqlTypes;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Player
 {
-    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(CharacterController))]
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] private CharacterController _controller;
         
         [SerializeField] private float _speed = 30f;
-        [SerializeField] private Rigidbody2D _rigidbody;
+        [SerializeField] private Rigidbody _rigidbody;
 
         [Header("Player Input")]
         [SerializeField] private KeyCode _leftKey;
@@ -23,7 +22,7 @@ namespace Player
 
         private void Start()
         {
-            if (!_rigidbody) GetComponent<Rigidbody2D>();
+            if (!_rigidbody) GetComponent<Rigidbody>();
             if (!_controller) GetComponent<CharacterController>();
         }
 
