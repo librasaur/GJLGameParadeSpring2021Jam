@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ice
-  m_Shader: {fileID: -6465566751694194690, guid: 8935b04fb2bbe1149b4f1a21466edfaa, type: 3}
+  m_Name: Crystal
+  m_Shader: {fileID: -6465566751694194690, guid: ead8ebd81d0ef4b45a3d3d8456efc804, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,17 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - Vector1_2FC3A6BD: 0.5
-    - Vector1_865390D5: 0.14
-    - Vector1_BA084048: 5.8
-    - _metallic: 0.5
-    - _normals: 2.4
-    - _refractionAmount: 1
-    - _smoothness: 0.85
-    - _switch: 1
+    - Vector1_3AA28762: 0.1
+    - Vector1_50D1BD51: 1
+    - Vector1_8216481D: -3
+    - _switch: 0
     m_Colors:
-    - Color_2824A1B7: {r: 0, g: 0, b: 0, a: 1}
-    - Color_3BFCAABE: {r: 0, g: 0, b: 0, a: 1}
-    - Color_BABFE07B: {r: 1, g: 1, b: 1, a: 0}
-    - _iceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _crystalColor: {r: 0, g: 0, b: 0, a: 0}
+    - _crystalColor_1: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
