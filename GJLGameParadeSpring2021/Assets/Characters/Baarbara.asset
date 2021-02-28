@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d4357c27d0d2c945a82f7191da7c70d, type: 3}
+  m_Script: {fileID: 0}
   m_Name: Baarbara
   m_EditorClassIdentifier: 
-  characterName: Baarbara
-  characterPrefab: {fileID: 8221443310569942623, guid: d4e0a534ce568c147bdaa30f2ef26abe, type: 3}
