@@ -20,10 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
+    - Vector1_1E38BD55: 1
     - Vector1_3AA28762: 0.1
     - Vector1_50D1BD51: 1
     - Vector1_8216481D: -3
-    - _switch: 0
+    - _switch: 1
     m_Colors:
     - _crystalColor: {r: 0, g: 0, b: 0, a: 0}
     - _crystalColor_1: {r: 1, g: 1, b: 1, a: 0}
