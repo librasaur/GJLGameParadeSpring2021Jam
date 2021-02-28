@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4357c27d0d2c945a82f7191da7c70d, type: 3}
+  m_Name: Wooly
+  m_EditorClassIdentifier: 
+  characterName: Wooly
+  characterPrefab: {fileID: 6706194465923671774, guid: 3ede8864991fa1f4fa0d251a7738ba43, type: 3}
