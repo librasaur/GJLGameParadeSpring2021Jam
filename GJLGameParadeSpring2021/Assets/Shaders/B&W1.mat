@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: B&W1
-  m_Shader: {fileID: -6465566751694194690, guid: fa24cc5387043524993145d1dcc6103c, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 3affaec0f58a56547aca7a3c3e2b39fb, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

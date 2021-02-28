@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Crystal
-  m_Shader: {fileID: -6465566751694194690, guid: ead8ebd81d0ef4b45a3d3d8456efc804, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 1dd4e2b50b1badf4ca956e50a1c05775, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
