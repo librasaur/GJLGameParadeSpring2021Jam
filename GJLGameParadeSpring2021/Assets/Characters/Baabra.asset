@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d4357c27d0d2c945a82f7191da7c70d, type: 3}
-  m_Name: Sheep
+  m_Script: {fileID: 11500000, guid: fab398be354950549a05f43b6e996cc3, type: 3}
+  m_Name: Baabra
   m_EditorClassIdentifier: 
-  characterName: Sheep
-  characterPrefab: {fileID: 6762018911253648123, guid: 566a2e9cc0c2c714f8f1e3b53f622898, type: 3}
+  characterName: Baabra
+  characterPrefab: {fileID: 0}

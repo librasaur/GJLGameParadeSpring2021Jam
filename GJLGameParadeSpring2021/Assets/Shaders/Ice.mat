@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ice
-  m_Shader: {fileID: -6465566751694194690, guid: 102fbd9da6312894b9e7a488d1537db7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 090672bcecbb6294ea17040d48d52f18, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

@@ -108,9 +108,10 @@ namespace Player
 				}
 
 				// Move the character by finding the target velocity
-				Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody.velocity.y);
+				Vector3 targetVelocity = new Vector3(move * 10f, m_Rigidbody.velocity.y, 0);
 				// And then smoothing it out and applying it to the character
 				m_Rigidbody.velocity = Vector3.SmoothDamp(m_Rigidbody.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+				
 
 				// If the input is moving the player right and the player is facing left...
 				if (move > 0 && !m_FacingRight)
@@ -118,7 +119,7 @@ namespace Player
 					// ... flip the player.
 					Flip();
 				}
-				// Otherwise if the input is moving the player left and the player is facing right...
+				// Otherwise if the input is moving the player left and the player is facingw right...
 				else if (move < 0 && m_FacingRight)
 				{
 					// ... flip the player.

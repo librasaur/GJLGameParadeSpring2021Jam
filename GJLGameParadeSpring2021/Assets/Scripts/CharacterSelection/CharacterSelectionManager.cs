@@ -9,7 +9,8 @@ namespace CharacterSelection
         [SerializeField] private CharacterObject[] _characterChoice;
         
         [Header("UI")]
-        [SerializeField] private Button _leftButton, _rightButton;
+        [SerializeField] private Button _leftButton;
+        [SerializeField] private Button _rightButton;
         
         [Header("Lighting")]
         [SerializeField] private GameObject _spotlight;
@@ -19,10 +20,8 @@ namespace CharacterSelection
 
         private void Start()
         {
-            _currentlyHighlighted = 1; // Set to 1 so highlights middle character
-
-            _leftButton.interactable = true;
-            _rightButton.interactable = true;
+            _currentlyHighlighted = 0;
+            _leftButton.interactable = false;
             
             Debug.Log("Highlighting: " + _characterChoice[_currentlyHighlighted].name);
         }
@@ -33,42 +32,32 @@ namespace CharacterSelection
             {
                 // Move right
                 case 1:
-                    // If user reaches far right, disable right button
-                    if (_currentlyHighlighted+1 == _characterChoice.Length-1)
+                    _currentlyHighlighted++;
+
+                    if (_currentlyHighlighted == _characterChoice.Length - 1)
                     {
                         _rightButton.interactable = false;
-                        _currentlyHighlighted++;
-                    }
-                    // Otherwise move right and enable left button 
-                    else
-                    {
                         _leftButton.interactable = true;
-                        _currentlyHighlighted++;
                     }
+                    else
+                        _leftButton.interactable = true;
                     
                     MoveLight(_lightShiftDistance);
-                    
-                    Debug.Log("Highlighting: " + _characterChoice[_currentlyHighlighted].name);
                     break;
                 
                 // Move left
                 case -1:
-                    // If user reaches far left, disable right left
-                    if (_currentlyHighlighted-1 == 0)
+                    _currentlyHighlighted--;
+
+                    if (_currentlyHighlighted == 0)
                     {
                         _leftButton.interactable = false;
-                        _currentlyHighlighted--;
-                    }
-                    // Otherwise move left and enable right button 
-                    else
-                    {
                         _rightButton.interactable = true;
-                        _currentlyHighlighted--;
                     }
+                    else
+                        _rightButton.interactable = true;
                     
                     MoveLight(-_lightShiftDistance);
-            
-                    Debug.Log("Highlighting: " + _characterChoice[_currentlyHighlighted].name);
                     break;
             }
         }
@@ -83,12 +72,9 @@ namespace CharacterSelection
             _spotlight.transform.position = newPosition;
         }
 
-        public void LetTheGamesBegin(int nextLevel)
+        public void LetTheGamesBegin(string nextLevel)
         {
             PlayerPrefs.SetInt("Character", _currentlyHighlighted);
-            
-            Debug.Log("Selected: " + _characterChoice[_currentlyHighlighted].name);
-
             SceneManager.LoadScene(nextLevel);
         }
     }

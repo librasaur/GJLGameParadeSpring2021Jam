@@ -16,13 +16,13 @@ public class AnimationScript : MonoBehaviour
 
         //walking\\
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             sheepAnim1.CrossFade("walking", 0.1f);
             sheepAnim1.SetBool("isWalking", true);
             sheepAnim1.SetBool("isIdle", false);
         }
-        if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.A))
         {
             sheepAnim1.SetBool("isIdle", true);
             sheepAnim1.SetBool("isWalking", false);
@@ -30,13 +30,13 @@ public class AnimationScript : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             sheepAnim1.CrossFade("backstep", 0.1f);
             sheepAnim1.SetBool("isReversing", true);
             sheepAnim1.SetBool("isIdle", false);
         }
-        if (Input.GetKeyUp(KeyCode.S))
+        if (Input.GetKeyUp(KeyCode.D))
         {
             sheepAnim1.SetBool("isIdle", true);
             sheepAnim1.SetBool("isReversing", false);
@@ -47,12 +47,12 @@ public class AnimationScript : MonoBehaviour
 
         //placeholder for testing the character selection animations\\
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             sheepAnim1.CrossFade("CS no", 0.1f);
             sheepAnim1.SetBool("isPicked", true);
         }
-        if (Input.GetKeyUp(KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.W))
         {
             sheepAnim1.SetBool("isIdle", true);
             sheepAnim1.SetBool("isPicked", false);
@@ -60,12 +60,12 @@ public class AnimationScript : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             sheepAnim1.CrossFade("CS yes", 0.1f);
             sheepAnim1.SetBool("isNotPicked", true);
         }
-        if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetKeyUp(KeyCode.S))
         {
             sheepAnim1.SetBool("isIdle", true);
             sheepAnim1.SetBool("isNotPicked", false);
