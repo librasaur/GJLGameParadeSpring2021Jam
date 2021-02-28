@@ -20,6 +20,7 @@ public class AnimationScript : MonoBehaviour
         {
             sheepAnim1.CrossFade("walking", 0.1f);
             sheepAnim1.SetBool("isWalking", true);
+            sheepAnim1.SetBool("isIdle", false);
         }
         if (Input.GetKeyUp(KeyCode.W))
         {
@@ -27,6 +28,21 @@ public class AnimationScript : MonoBehaviour
             sheepAnim1.SetBool("isWalking", false);
             sheepAnim1.CrossFade("Idle", 0.1f);
         }
+
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            sheepAnim1.CrossFade("backstep", 0.1f);
+            sheepAnim1.SetBool("isReversing", true);
+            sheepAnim1.SetBool("isIdle", false);
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            sheepAnim1.SetBool("isIdle", true);
+            sheepAnim1.SetBool("isReversing", false);
+            sheepAnim1.CrossFade("Idle", 0.1f);
+        }
+
 
 
         //placeholder for testing the character selection animations\\
